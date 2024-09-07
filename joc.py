@@ -88,7 +88,7 @@ red_tank = pygame.transform.scale(red_tank, (50, 75))
 tank1 = pygame.transform.rotate(blue_tank, angle = 0)
 # adding awesome arcade music in the background
 awesome_sound = pygame.mixer.music.load("retro_music.mp3")
-pygame.mixer.music.play()
+pygame.mixer.music.play(loop = 100)
 
 class Tank(pygame.sprite.Sprite):
     def __init__(self, x, y, color, angle):
@@ -370,6 +370,8 @@ class Ball(pygame.sprite.Sprite):
     def __init__(self, pos_x, pos_y, direction, color):
         super().__init__()
         self.image = pygame.Surface((20, 20))
+        # creating a transparent background
+        # the ball needs to know the direction in which its moving to calculate the x and y movement
         self.image.fill(color_white)
         self.image.set_colorkey(color_white)
         self.direction = direction
