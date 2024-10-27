@@ -1,5 +1,5 @@
 # Tanks-game
-designed a two-player tank battle game in Python using Pygame, featuring a maze environment where players control tanks using WASD/arrows keys. The game includes collision detection, shooting mechanics, and player movement that were developed using object oriented programming
+Designed a two-player tank battle game in Python using Pygame, featuring a maze environment where players control tanks using WASD/arrows keys. The game includes collision detection, shooting mechanics, and player movement that were developed using object oriented programming.
 
 
 ![image](https://github.com/user-attachments/assets/6b1ce01d-3f67-44e3-a4ef-37268ccff7ab)
